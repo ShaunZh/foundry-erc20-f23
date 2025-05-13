@@ -24,12 +24,11 @@ contract ManualToken {
     }
 
     function transfer(address _to, uint256 _amount) public {
-        uint256 previousBalance = balanceOf(msg.sender) + balanceOf(_to);
+        uint256 previousBalances = balanceOf(msg.sender) + balanceOf(_to);
         s_balances[msg.sender] -= _amount;
         s_balances[_to] += _amount;
 
-        require(s_balances[msg.sender] + s_balances[_to] == previousBalance, "Transfer failed");
+        require(s_balances[msg.sender] + s_balances[_to] == previousBalances, "Transfer failed");
     }
-
 
 }
