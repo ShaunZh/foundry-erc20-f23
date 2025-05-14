@@ -1,3 +1,12 @@
+## Overview
+
+### Resources
+* [openzeppelin](https://docs.openzeppelin.com/contracts/5.x/erc20-supply)
+
+
+### Dependencies
+* openzeppelin: `forge install OpenZeppelin/openzeppelin-contracts --no-commit`
+
 ## Foundry
 
 **Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
